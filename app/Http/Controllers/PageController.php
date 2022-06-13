@@ -13,4 +13,12 @@ class PageController extends Controller
         //dd($movies);
         return view('home', compact('movies'));
     }
+
+  /*   public function search($searchText)
+    {
+        $search = Movie::table('movies')->where('title', $searchText)->get();
+        //dd($search);
+
+        return view('home', compact('search'));
+    } */
 }

@@ -26,19 +26,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Movies</a>
                         </li>
-
                     </ul>
 
                 </div>
+
+                <input type="search" name="search" id="search" :value="searchText">
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="grid-card bg-dark">
         <div class="container">
-            <div class="row row-cols-md-5 mt-5">
+            <div class="row row-cols-md-5 pt-5">
                 @forelse($movies as $movie)
-                <div class="col">
+                <div class="col p-3">
                     <div class="card">
                         <img src="https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled.png" alt="...">
                         <div class="card-body">
