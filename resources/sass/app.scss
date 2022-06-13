@@ -5,3 +5,11 @@
 .bg_nav{
     background-color: #F7F7F7;
 }
+
+.card-body{
+    display: flex;
+    height: 11rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}

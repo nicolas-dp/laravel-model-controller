@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -37,16 +36,16 @@
 
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row row-cols-md-5 mt-5">
                 @forelse($movies as $movie)
                 <div class="col">
                     <div class="card">
                         <img src="https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled.png" alt="...">
-                        <!-- <div class="card-body">
-                            <h3>{{$movie['title']}}</h3>
-                            <small>Original Title: {{$movie['original_title']}}</small>
-                            <span>Vote: {{$movie['vote']}}</span>
-                        </div> -->
+                        <div class="card-body">
+                            <h5>{{$movie->title}}</h5>
+                            <small>Original Title: {{$movie->original_title}}</small>
+                            <span>Vote: {{$movie->vote}}</span>
+                        </div>
                     </div>
                 </div>
 
